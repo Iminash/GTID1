@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=main.cpp
+FileName=Mobil.cpp
 CompileCpp=1
 Folder=Tugas Pertemuan 2
 Compile=1

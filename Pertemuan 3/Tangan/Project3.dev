@@ -1,6 +1,6 @@
 [Project]
-FileName=Jendela.dev
-Name=Project2
+FileName=Project3.dev
+Name=Project3
 Type=0
 Ver=2
 ObjFiles=
@@ -27,8 +27,8 @@ CommandLine=
 Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
-CompilerSet=1
-CompilerSettings=0000000000000000001000000
+CompilerSet=0
+CompilerSettings=0000000000000000000000000
 UnitCount=1
 
 [VersionInfo]
@@ -51,9 +51,9 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=layar biru.cpp
+FileName=Tangan.cpp
 CompileCpp=1
-Folder=Project2
+Folder=Project3
 Compile=1
 Link=1
 Priority=1000

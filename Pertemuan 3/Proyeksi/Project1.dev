@@ -1,6 +1,6 @@
 [Project]
-FileName=Jendela.dev
-Name=Project2
+FileName=Project1.dev
+Name=Proyeksi
 Type=0
 Ver=2
 ObjFiles=
@@ -9,9 +9,9 @@ Libs=
 PrivateResource=
 ResourceIncludes=
 MakeIncludes=
-Compiler=-DGLUT_STATIC
+Compiler=-DGLUT_STATIC_@@_
 CppCompiler=
-Linker=-lglut32 -lglu32 -lopengl32 -lwinmm -lgdi32
+Linker=-lglut32 -lglu32 -lopengl32 -lwinmm -lgdi32_@@_
 IsCpp=1
 Icon=
 ExeOutput=
@@ -19,7 +19,7 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=
+OverrideOutputName=Project1.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -27,8 +27,8 @@ CommandLine=
 Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
-CompilerSet=1
-CompilerSettings=0000000000000000001000000
+CompilerSet=0
+CompilerSettings=0000000000000000000000000
 UnitCount=1
 
 [VersionInfo]
@@ -39,21 +39,24 @@ Build=0
 LanguageID=1033
 CharsetID=1252
 CompanyName=
-FileVersion=
+FileVersion=1.0.0.0
 FileDescription=Developed using the Dev-C++ IDE
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=
+ProductVersion=1.0.0.0
 AutoIncBuildNr=0
 SyncProduct=1
 
+[Unit2]
+FileName=Proyeksi.cpp
+
 [Unit1]
-FileName=layar biru.cpp
+FileName=Proyeksi.cpp
 CompileCpp=1
-Folder=Project2
+Folder=Proyeksi
 Compile=1
 Link=1
 Priority=1000

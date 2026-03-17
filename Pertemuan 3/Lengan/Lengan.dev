@@ -1,5 +1,5 @@
 [Project]
-FileName=Jendela.dev
+FileName=Lengan.dev
 Name=Project2
 Type=0
 Ver=2
@@ -27,8 +27,8 @@ CommandLine=
 Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
-CompilerSet=1
-CompilerSettings=0000000000000000001000000
+CompilerSet=0
+CompilerSettings=0000000000000000000000000
 UnitCount=1
 
 [VersionInfo]
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=layar biru.cpp
+FileName=Lengan.cpp
 CompileCpp=1
 Folder=Project2
 Compile=1
