@@ -1,0 +1,4 @@
+Program ini memakai sistem Induk dan Anak. Artinya, bagian bahu adalah induk dari siku, dan siku adalah induk dari jari-jari. Jadi, ketika bahu diputar, siku dan jari-jari ikut terbawa. Tapi ketika cuma jari yang digerakkan, bagian bahu tidak ikut berubah posisinya.
+Fungsi Push dan Pop Matrix berfungsi untuk menjaga posisi gambar glPushMatrix, Kerjanya menyimpan posisi koordinat terakhir. Ini dilakukan sebelum memutar atau mengubah scaling satu bagian lengan, glPopMatrix berfungsi untuk mencabut posisi koordinat tadi dan balik ke posisi awal.
+Gambar dibuat berurutan mulai dari bahu, terus ke siku, baru ke jari. Setiap kali ingin pindah, program akan memakai glTranslatef buat geser titik pusat ke ujung bagian sebelumnya.
+
