@@ -1,4 +1,3 @@
-// File: Scenery.h
 #ifndef SCENERY_H
 #define SCENERY_H
 

@@ -1,4 +1,3 @@
-// File: main.cpp
 #include "Common.h"
 #include "Scenery.h"
 #include "Physics.h"
@@ -10,7 +9,6 @@
 #include <algorithm>
 #include <cctype>
 
-// Definisi variabel global
 GameState currentState = STATE_MENU;
 int cameraMode = 0;
 bool keys[256] = { false };
@@ -122,17 +120,17 @@ void initGame() {
     glEnable(GL_NORMALIZE); glEnable(GL_COLOR_MATERIAL);
     std::srand(std::time(0));
 
-    // MEMANGGIL FUNGSI LOAD TEKSTUR
+
     RenderSystem::initTextures();
 
-    // 1. Generate Jalur Sirkuit (Bentuk Gelombang)
+    // Jalur Sirkuit
     for (float i=0; i<2*M_PI; i+=0.005f) {
         float r = 700.0f + std::cos(i*3)*200.0f; 
         trackPoints.push_back(Vec3(std::cos(i)*r, 0, std::sin(i)*r));
     }
     car.alignToTrack(trackPoints);
 
-    // 2. Generate Objek Udara
+    // Objek Udara
     for (int i=0; i<120; i++) {
         SceneryObject obj;
         if (i < 70) { 
@@ -149,7 +147,7 @@ void initGame() {
         sceneryList.push_back(obj);
     }
 
-    // 3. Generate Lingkungan
+    // Lingkungan
     for (int i=0; i<1000; i++) {
         float theta = randFloat(0, 2*M_PI);
         float rTrack = 700.0f + std::cos(theta*3)*200.0f;
@@ -174,7 +172,7 @@ void initGame() {
         sceneryList.push_back(obj);
     }
 
-    // 4. Generate Trackside
+    // Trackside
     for (size_t i=0; i<trackPoints.size(); i+=10) {
         Vec3 p1 = trackPoints[i], p2 = trackPoints[(i+1)%trackPoints.size()];
         Vec3 n = Vec3(-(p2-p1).z, 0, (p2-p1).x).normalize();

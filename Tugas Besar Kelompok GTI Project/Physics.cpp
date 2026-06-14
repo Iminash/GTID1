@@ -1,4 +1,3 @@
-// File: Physics.cpp
 #include "Physics.h"
 #include <algorithm>
 #include <cmath>

@@ -1,4 +1,3 @@
-// File: Render.cpp
 #include "Render.h"
 #include "imageloader.h" 
 #include <algorithm>
@@ -100,7 +99,6 @@ void RenderSystem::drawWheel(float x, float y, float z, bool isFront, bool isSha
     glPopMatrix();
 }
 
-// --> PERBAIKAN: Menambahkan parameter Y agar sudut suspensi presisi ke pusat roda
 void RenderSystem::drawSuspension(float x, float y, float z, bool isShadow) {
     if (!isShadow) setBlack();
     glLineWidth(2.0f);
@@ -158,12 +156,9 @@ void RenderSystem::drawCarGeometry(bool isShadow) {
     if (!isShadow) setWhite();
     glPushMatrix(); glTranslatef(0.0f, 0.62f, -0.35f); glutSolidSphere(0.2f, 12, 12); glPopMatrix();
 
-    // --> PERBAIKAN KOORDINAT BAN: Ban diangkat agar rata dengan sirkuit
-    // Roda Depan (Y Center = 0.06f)
     drawSuspension(1.0f, 0.06f, 2.5f, isShadow); drawSuspension(-1.0f, 0.06f, 2.5f, isShadow);
     drawWheel(0.95f, 0.06f, 2.5f, true, isShadow); drawWheel(-0.95f, 0.06f, 2.5f, true, isShadow);
     
-    // Roda Belakang (Y Center = 0.21f)
     drawSuspension(1.0f, 0.21f, -1.3f, isShadow); drawSuspension(-1.0f, 0.21f, -1.3f, isShadow);
     drawWheel(1.05f, 0.21f, -1.3f, false, isShadow); drawWheel(-1.05f, 0.21f, -1.3f, false, isShadow);
 }

@@ -1,4 +1,3 @@
-// File: UI.cpp
 #include "UI.h"
 #include "Physics.h"
 #include <algorithm>
