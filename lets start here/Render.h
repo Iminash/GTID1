@@ -17,13 +17,17 @@ public:
     static void setWhite();
     static void setBlack();
     static void setYellow();
-    static void drawWheel(float x, float y, float z, bool isFront);
-    static void drawSuspension(float x, float z);
+    static void drawWheel(float x, float y, float z, bool isFront, bool isShadow = false);
+    
+    static void drawSuspension(float x, float y, float z, bool isShadow = false);
+    
     static void drawCar();
-    static void drawPersonAndFlash(float x, float y, float z, float seedVal, float timeMs);
+    static void drawCarGeometry(bool isShadow);
+    static void drawPersonAndFlash(float x, float y, float z, float seedVal, float timeMs, bool isShadow = false);
     
     static void drawTreeGeometry(const SceneryObject& obj, bool isShadow);
     static void drawBuildingGeometry(const SceneryObject& obj, bool isShadow);
+    static void drawObjectGeometry(const SceneryObject& obj, bool isShadow, float timeMs);
     
     static void drawScenery();
     static void drawTrack();

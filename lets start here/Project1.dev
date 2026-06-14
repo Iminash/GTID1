@@ -24,7 +24,7 @@ HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
 CommandLine=
-Folders=
+Folders=bmp,include,src
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
@@ -53,7 +53,7 @@ SyncProduct=1
 [Unit1]
 FileName=main.cpp
 CompileCpp=1
-Folder=Project1
+Folder=src
 Compile=1
 Link=1
 Priority=1000
@@ -63,7 +63,7 @@ BuildCmd=
 [Unit2]
 FileName=Common.h
 CompileCpp=1
-Folder=Project1
+Folder=include
 Compile=1
 Link=1
 Priority=1000
@@ -73,7 +73,7 @@ BuildCmd=
 [Unit3]
 FileName=Scenery.h
 CompileCpp=1
-Folder=Project1
+Folder=include
 Compile=1
 Link=1
 Priority=1000
@@ -83,7 +83,7 @@ BuildCmd=
 [Unit4]
 FileName=Scenery.cpp
 CompileCpp=1
-Folder=Project1
+Folder=src
 Compile=1
 Link=1
 Priority=1000
@@ -93,7 +93,7 @@ BuildCmd=
 [Unit5]
 FileName=Physics.h
 CompileCpp=1
-Folder=Project1
+Folder=include
 Compile=1
 Link=1
 Priority=1000
@@ -103,7 +103,7 @@ BuildCmd=
 [Unit6]
 FileName=Physics.cpp
 CompileCpp=1
-Folder=Project1
+Folder=src
 Compile=1
 Link=1
 Priority=1000
@@ -113,7 +113,7 @@ BuildCmd=
 [Unit7]
 FileName=Render.h
 CompileCpp=1
-Folder=Project1
+Folder=include
 Compile=1
 Link=1
 Priority=1000
@@ -123,7 +123,7 @@ BuildCmd=
 [Unit8]
 FileName=Render.cpp
 CompileCpp=1
-Folder=Project1
+Folder=src
 Compile=1
 Link=1
 Priority=1000
@@ -133,7 +133,7 @@ BuildCmd=
 [Unit9]
 FileName=UI.h
 CompileCpp=1
-Folder=Project1
+Folder=include
 Compile=1
 Link=1
 Priority=1000
@@ -143,7 +143,7 @@ BuildCmd=
 [Unit10]
 FileName=UI.cpp
 CompileCpp=1
-Folder=Project1
+Folder=src
 Compile=1
 Link=1
 Priority=1000
@@ -153,7 +153,7 @@ BuildCmd=
 [Unit11]
 FileName=Imageloader.cpp
 CompileCpp=1
-Folder=Project1
+Folder=src
 Compile=1
 Link=1
 Priority=1000
@@ -163,7 +163,7 @@ BuildCmd=
 [Unit12]
 FileName=Imageloader.h
 CompileCpp=1
-Folder=Project1
+Folder=include
 Compile=1
 Link=1
 Priority=1000
@@ -172,7 +172,7 @@ BuildCmd=
 
 [Unit14]
 FileName=grass.bmp
-Folder=Project1
+Folder=bmp
 Compile=0
 Link=0
 Priority=1000
@@ -190,7 +190,7 @@ BuildCmd=
 
 [Unit13]
 FileName=billboard.bmp
-Folder=Project1
+Folder=bmp
 Compile=0
 Link=0
 Priority=1000
